@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>Backbone Finder</title>
+    <script src="" charset="utf-8">
+        <ul>
+          {{#Search}}
+          <li>
+          <a id="{{imdbID}}" href="#">{{Title}}</a>
+          </li>
+          {{/Search}}
+        </ul>
+    </script>
+    <script type="text/javascript">
+      <h2>{{Title}} {{Year}}</h2>
+      <h3>Starring: {{Actors}}</h3>
+      <img id="poster" src="{{Poster}}"
+      <p>
+      {{Plot}}</p>
+    </script>
+
+  </head>
+  <body>
+    <div id="search">
+      <label>Movie name:</label> <input id="search_text" type="text"/>
+      <button id="search_button">Search</button>
+    </div>
+    <div id="list"></div>
+    <div id="details"></div>
+
+    <script src="mustache.js" charset="utf-8"></script>
+    <script src="jquery-1.11.0.min.js" charset="utf-8"></script>
+    <script src="underscore.js" charset="utf-8"></script>
+    <script src="backbone.js" charset="utf-8"></script>
+    <script src="client.js" charset="utf-8"></script>
+  </body>
+</html>
