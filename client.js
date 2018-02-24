@@ -58,5 +58,5 @@ var DetailsView = Backbone.View.extend({
 var searchModel = new MovieModel(),
     detailsModel = new MovieModel(),
     searchView = new SearchView({ el: document.getElementById("search")}),
-    resultsView = new ResultsView({ el: document.getElemendById("list")}),
-    detailsView = new DetailsView({ el: document.getElemendById("details")});
+    resultsView = new ResultsView({ el: document.getElementById("list")}),
+    detailsView = new DetailsView({ el: document.getElementById("details")});
